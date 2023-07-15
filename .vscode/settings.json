@@ -17,5 +17,6 @@
         "titleBar.activeForeground": "#15202b",
         "titleBar.inactiveBackground": "#ffe4c499",
         "titleBar.inactiveForeground": "#15202b99"
-    }
+    },
+    "compile-hero.disable-compile-files-on-did-save-code": true
 }
