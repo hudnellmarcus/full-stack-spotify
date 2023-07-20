@@ -82,7 +82,7 @@ const UploadModal = () => {
         .insert({
           user_id: user.id,
           title: values.title,
-          authot: values.author,
+          author: values.author,
           image_path: imageData.path,
           song_path: songData.path,
         });
@@ -112,30 +112,30 @@ const UploadModal = () => {
       onChange={onChange}
     >
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Input
+         <Input
           id="title"
           disabled={isLoading}
           {...register("title", { required: true })}
           placeholder="Song title"
-        />
-        <Input
+        /> 
+         <Input
           id="author"
           disabled={isLoading}
           {...register("author", { required: true })}
           placeholder="Song author"
-        />
-        <div>
+        />   
+         <div>
           <div className="pb-1">
             Select a song file
-            <Input
+           <Input
               id="song"
               type="file"
               accept=".mp3"
               disabled={isLoading}
               {...register("song", { required: true })}
-            />
+            /> 
           </div>
-        </div>
+        </div>  
         <div>
           <div className="pb-1">
             Select an image
@@ -146,7 +146,7 @@ const UploadModal = () => {
               disabled={isLoading}
               {...register("image", { required: true })}
             />
-          </div>
+          </div>  
           <Button disabled={isLoading} type="submit">
             Create
           </Button>

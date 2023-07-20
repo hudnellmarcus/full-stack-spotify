@@ -12,7 +12,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
 }, ref) => {
 
     return (
-        <Input 
+        <input 
         type={type}
         className={twMerge(`
         flex
